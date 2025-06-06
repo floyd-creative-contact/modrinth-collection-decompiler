@@ -1,0 +1,12 @@
+[project]
+name = "modrinth_project_decompiler"
+version = "0.1.0"
+description = ""
+authors = ["MisterGriimm"]
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.32.3",
+    "pandas>=2.3.0",
+    "streamlit>=1.45.1",
+    "beautifulsoup4>=4.13.4",
+]
