@@ -9,4 +9,5 @@ dependencies = [
     "pandas>=2.3.0",
     "streamlit>=1.45.1",
     "beautifulsoup4>=4.13.4",
+    "matplotlib>=3.8.4",
 ]
