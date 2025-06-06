@@ -1,3 +1,17 @@
+import subprocess
+import sys
+
+# List installed packages in the Streamlit Cloud environment
+installed = subprocess.run([sys.executable, "-m", "pip", "list"], capture_output=True, text=True)
+print(installed.stdout)
+
+# Attempt to install matplotlib manually (as a fallback)
+try:
+    import matplotlib.pyplot as plt
+except ModuleNotFoundError:
+    subprocess.run([sys.executable, "-m", "pip", "install", "matplotlib"])
+    import matplotlib.pyplot as plt
+
 import requests
 from bs4 import BeautifulSoup
 import streamlit as st
